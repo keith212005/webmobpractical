@@ -6,8 +6,8 @@
         </h2>
         <a href="{{route('product.add')}}" class="btn btn-info">Add</a>
         @if(Session::has('product-created'))
-            <div style="background-color: green;">
-            <h4 style="color: white">Product created Successfully</h4>
+            <div>
+            <h4>Product created Successfully</h4>
             </div>
         @endif
     </x-slot>
@@ -51,17 +51,11 @@
 
                             </tbody>
                         </table>
-
                     </div>
-
-
                 </div>
             </div>
         </div>
     </main>
-
-
-
 </x-app-layout>
 
 

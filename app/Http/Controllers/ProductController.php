@@ -10,19 +10,12 @@ class ProductController extends Controller
 {
     public function index()
     {
-//        dd('dddddd');
-
-//    return view('user.profile', ['user' => User::findOrFail($id)]);
-
         $products = Product::all();
-
         return view('product', [])->with('products', $products);
     }
 
     public function add()
     {
-
-//    return view('user.profile', ['user' => User::findOrFail($id)]);
         return view('add-product', []);
     }
 
